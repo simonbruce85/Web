@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>For3x Funding</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/for3x/PPT-FOR3X-10.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="darker-blue">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="dreamNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="#home"><img draggable="false" src="img/for3x/PPT - FOR3X_Nuevo (2).png" alt="logo"> FOR3X FUNDING</a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="#litepaper">LitePaper</a></li>
+                            </ul>
+                            <!-- Button -->
+                            <a href="#" class="btn login-btn ml-50" id="web3_message" onclick="connectWallet()">Wallet</a>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Welcome Area Start ##### -->
+    <section class="welcome_area clearfix dzsparallaxer auto-init ico fullwidth" data-options='{direction: "normal"}' id="home">
+        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(img/Benjamin1.jpg)"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content dark-blue">
+
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Welcome Content -->
+                    <div class="col-12 col-lg-6 col-md-12">
+                        <div class="welcome-content">
+                            <div class="promo-section">
+                                <div class="integration-link">
+                                    <span class="integration-icon">
+                                        <img draggable="false" src="img/svg/img-dollar.svg" width="24" height="24" alt="">
+                                    </span>
+                                    <span class="integration-text">Discover a new way to get funded</span>
+                                </div>
+                            </div>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Ready for being funded?</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">For3x funding is a NFT based initiative to fund real and loyal traders using two different mechanisms, a draw and a competition</p>
+                            <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="#about" class="btn dream-btn mr-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Welcome Video Area -->
+                    <div class="col-12 col-lg-5 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                        <div class="ico-counter wow fadeInUp">
+                            <div class="counter-down">
+                                <div class="content">
+                                    <div class="conuter-header">
+                                        <h3 class="text-center">NFTs SALE ENDS IN</h3>
+                                    </div>
+                                    <div class="counterdown-content">
+                                        <div class="count-down titled circled text-center">
+                                            <div class="simple_timer"></div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="mt-20">
+                                                <select class="button" id="mint_amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                </select>
+                                                <input type=button class="button" value="mint" onclick="mint()">
+                                            </div>
+                                            <input id="connect_button" type="button" value="connect" onclick="connectWallet()" style="display: none;">
+                                            <p  class="text-center mt-20" id="nft_balance" ></p>
+                                            <p class="text-center"  id="price"></p>
+                                        </div>   
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Welcome Area End ##### -->
+
+    <div class="vertical-social">
+        <ul>
+            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <!--<li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a></li>-->
+            <!-- <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+            <li><a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+            <li><a href="#"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
+            
+            
+        </ul>                  
+    </div>
+
+    <!-- ##### trust Area Start ##### -->
+    <div class="trust-section section-padding-100"></div>
+    <!-- ##### trust Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="about-us-area section-padding-0-100 clearfix" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-12 col-lg-6">
+                    <div class="welcome-meter wow fadeInUp" data-wow-delay="0.7s">
+                        <img draggable="false" src="img/about1 (1).png" class="img-responsive center-block" alt="">
+                        <!-- client meta -->
+                        <div class="growing-company text-center mt-30 wow fadeInUp" data-wow-delay="0.8s">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="who-we-contant" >
+                        
+                        <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">For3x Funding draw.</h4>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">For3x Funding offers the incredible opportunity of being funded in a draw (no competitions, just a simple draw)</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">Our draw will be based on three different types of NFTs (Common, Rare and Epic) which will offer to their owners different chances of winning a 10k funded forex trading account depending on their rareness</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">FEELING LUCKY? For more information please refer to our Litepaper!</p>
+                        <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#litepaper">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="about-us-area section-padding-0-100 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-6">
+                    <div class="who-we-contant">
+                        
+                        <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.3s">For3x Funding Competition.</h4>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">Not feeling lucky but feeling confident of your skills? For3x Funding also offers a competition for those talented traders who prove their abilities in the market</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">Four different competitions will take place to win one 10k funded forex account each. Depending on the rareness of their NFT, the owner will participate in a different tournament, where they will have a possibility of being funded if they reach the 1st place</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">Ready to show your skill? Please refer to the link below for conditions, prizes, and competition structure</p>
+                        <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#litepaper">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="welcome-meter wow fadeInUp" data-wow-delay="0.7s">
+                        <img draggable="false" src="img/about1 (1).png" class="center-block" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+    
+        <div class="container">
+            <div class="section-heading text-center">
+                        <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Watch our demo video</h2>
+                    </div>
+            <!-- Welcome Video Area -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                <div class="welcome-video-area wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- Welcome Thumbnail -->
+                    <div class="welcome-thumb">
+                        <img draggable="false" src="img/video-img.jpg" alt="">
+                    </div>
+                    <!-- Video Icon -->
+                    <div class="video-icon">
+                        <a href="https://www.youtube.com/watch?v=iVicRTFNf1Y" class="btn dream-btn video-btn" id="videobtn"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="clearfix"></div>
+
+    <!-- ##### Our Services Area Start ##### -->
+    <section class="our_services_area section-padding-100-70 clearfix" >
+        <div class="container" >
+            
+            <div class="section-heading text-center" >
+                
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Types of NFTs</h2>
+            </div>
+                
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img draggable="false" src="img/for3x/PPT - FOR3X-21.png" alt="">
+                        </div>
+                        <h6>COMMON</h6>
+                     </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img draggable="false" src="img/for3x/PPT - FOR3X-21.png" alt="">
+                        </div>
+                        <h6>RARE</h6>
+                     </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-center mb-100 wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Icon -->
+                        <div class="service_icon">
+                            <img draggable="false" src="img/for3x/PPT - FOR3X-21.png" alt="">
+                        </div>
+                        <h6>EPIC</h6>
+                    </div>
+                </div>
+    </section>
+    <!-- ##### Our Services Area End ##### -->
+
+    <!-- ##### Our roadmap Area start ##### -->
+    <section class="roadmap" style="padding-bottom:0" id="roadmap">
+        <div class="section-heading text-center">
+            
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s">For3x Funding Roadmap</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">This project will consist in 5 different phases listed below</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="timeline-split">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="timeline section-box-margin">
+                        <div class="block block-left">
+                           <h3>Phase I</h3>
+                           <span class="date">April 1st, 2022</span> <span class="between">to</span> <span class="date">April 4, 2022</span>
+                           <p>First Pre-sale will take place. In this phase, only whitelisted people will be able to participate.</p>
+                           <p>The first 30 pieces will be available for mint at a super special price of 0.02ETH</p>
+                        </div>
+
+                        <div class="block block-right mt-30">
+                           <h3>Phase II</h3>
+                           <span class="date">April 5, 2022</span> <span class="between">to</span> <span class="date">April 8, 2022</span>
+                           <p>The second Pre-sale will take place. 50 pieces will be available for mint at 0.03ETH</p>
+                           <p>In this phase, the pieces will not be revealed yet</p>
+                        </div>
+
+                        <div class="block block-left mt-30">
+                           <h3>Phase III</h3>
+                           <span class="date">April 8, 2021</span> <span class="between">to</span> <span class="date">April 15, 2021</span>
+                           <p>This phase will be the public sale, where the 120 remaining NFTs will be available for mint.</p>
+                           <p>After this phase, all the NFTs will be revealed, and the draw and competition processes will officially start</p>
+                        </div>
+
+                        <div class="block block-right mt-30">
+                           <h3>Phase IV</h3>
+                           <span class="date">Dec 28, 2020</span> <span class="between">to</span> <span class="date">Jan 29, 2020</span>
+                           <p>The draw will take place, and the winners of the first six 10k forex funded accounts will be announced on our social media</p>
+                        </div>
+
+                        <div class="block block-left mt-30">
+                           <h3>Phase V</h3>
+                           <span class="date">April 25, 2021</span> <span class="between">to</span> <span class="date">Nov 16, 2021</span>
+                           <p>The organization of the tournament will be announced and will start the four-week competition</p>
+                        </div>
+
+                         <div class="block block-right mt-30">
+                           <h3>Final Phase</h3>
+                           <span class="date">Dec 28, 2020</span> <span class="between">to</span> <span class="date">Jan 29, 2020</span>
+                           <p>The four winners of the tournaments will be announced, and their 10k forex funded accounts will be assigned</p>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Our roadmap Area End ##### -->
+
+    
+    
+ <!-- ##### token-distribution Area start ##### -->
+    <section class="token-distribution mt-30" id="distribution">
+        <div class="container">
+            
+            <div class="section-heading text-center">
+                
+                <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+                    
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our NFT Distribution</h2>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2 class="text-center mb-30">Token Allocation</h2>
+                <div class="token-allocation">
+                    <img draggable="false" src="img/for3x/PPT - FOR3X- 18.png" class="center-block" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="token-info-wapper"></div>
+                <h2 class="text-center mb-30">More Token Info</h2>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('img/svg/token-icon-1.svg');"></div>
+                        <div class="token-descr">200 Pieces max supply</div>
+                    </div>
+                </div>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('img/svg/2.svg');"></div>
+                        <div class="token-descr">160 Common Pieces</div>
+                    </div>
+                </div>
+                <div class="token-info">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('img/svg/token-icon-2.svg');"></div>
+                        <div class="token-descr">36 Rare Pieces</div>
+                    </div>
+                </div>
+                <div class="token-info" style="margin-bottom:0">
+                    <div class="info-wrapper">
+                        <div class="token-icon" style="background-image: url('img/svg/9.svg');"></div>
+                        <div class="token-descr">4 Epic Pieces</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- ##### token-distribution Area End ##### -->
+
+    <!-- ##### trust Area Start ##### -->
+    <div class="trust-section section-padding-100">
+        <div class="section-heading text-center">
+            
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Partners</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <!-- ##### SPACE ##### -->
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <!-- ##### SPACE ##### -->
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <a href="http://www.qqglobalmarkets.com/">
+                        <div class="trust-item text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="ico-platform-logo">
+                                <img draggable="false" src="img/for3x/QQ2-25.png" alt="">
+                            </div>
+                            <div class="check">
+                                <div class="value">QQ Global Markets</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <a href="https://sertalliance.com/">
+                        <div class="trust-item text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="ico-platform-logo2">
+                                <img draggable="false" src="img/for3x/cropped-Logo2.0-02-86x38.png" alt="">
+                            </div>
+                            <div class="check2">
+                                <div class="value2">Sert Alliance</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <!-- ##### SPACE ##### -->
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <!-- ##### SPACE ##### -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ##### trust Area End ##### -->
+
+    <!-- ##### FAQ & Timeline Area Start ##### -->
+    <div class="faq-timeline-area section-padding-100" id="litepaper" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 col-md-12">
+                    <div class="section-heading">
+                        
+                        <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="dream-faq-area">
+                        <dl>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.2s">What are the objectives of this project?</dt>
+                            <dd class="wow fadeInUp" data-wow-delay="0.3s">
+                                <p>The objective of this project is to provide the opportunity of being funded to those traders who have been close to passing a funding challenge, cannot afford a funding challenge fee, or any other person interested in operating in the Forex market with a remarkably reliable broker </p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.3s">What is a NFT sale and pre-sale?</dt>
+                            <dd>
+                                <p>Pre-sale and Sale will be the two different selling phases of our project, where the traders will be able to acquire their pieces until the time finishes or supply lasts</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.4s">What is the pre-sale start date?</dt>
+                            <dd>
+                                <p>To be determined</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave wow fadeInUp" data-wow-delay="0.5s">How may I access to pre-sale?</dt>
+                            <dd>
+                                <p>Pre-sale will be the first selling phase of our project, and all the traders have to do is be one of the first 80 people to mint your NFT before the deadline.  Please follow our social media for announcements </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                    <div class="ico-docs">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="#home" target="_blank">
+                                        <div class="title">Litepaper ENG</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                                <div class="doc-element">
+                                    <a class="document-entry" href="https://drive.google.com/file/d/1Eh3Uq-Xu7G2qf3VQfZeI5E-lR12Am6cX/view" target="_blank"><div class="title">Litepaper ESP</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>=
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### FAQ & Timeline Area End ##### -->
+   
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img" style="background-image: url(img/core-img/pattern.png);">
+
+      
+        <div class="footer-content-area " style="background-image: url(img/core-img/footer-bg2.png);">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-12 col-md-5">
+                        <div class="footer-copywrite-info">
+                            <!-- Copywrite -->
+                            <div class="copywrite_text wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="footer-logo">
+                                    <a href="#"><img draggable="false" src="img/for3x/PPT - FOR3X_Nuevo (2).png" alt="logo">For3x Funding</a>
+                                </div>
+                                <p>For3x funding is a NFT based initiative to fund real and loyal traders using two different mechanisms, a draw and a competition</p>
+                            </div>
+                            <!-- Social Icon -->
+                            <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="#"> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.2s">
+                                <h5>NAVIGATE</h5>
+                                <a href="#home"><p>Home</p></a>
+                                <a href="#about"><p>About</p></a>
+                                <a href="#roadmap"><p>Roadmap</p></a>
+                                <a href="#distribution"><p>Distribution</p></a>
+                                <a href="#litepaper"><p>LitePaper</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <h5>Partners</h5>
+                                <a href="https://sertalliance.com/"><p>Sert Alliance</p></a>
+                                <a href="http://www.qqglobalmarkets.com/"><p>QQ Global Markets</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <h5>CONTACT US</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+    
+    <script type="text/javascript" src="src/web3.js"></script>
+    <script type="text/javascript" src="src/fore3xfunding.js"></script>
+    <!-- ########## All JS ########## -->
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Parallax js -->
+    <script src="js/dzsparallaxer.js"></script>
+
+    <script src="js/jquery.syotimer.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <!-- script js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
